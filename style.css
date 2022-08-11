@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* footer support */
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* footer support */
+  margin-bottom: 100px;
+  background-color: rgb(245, 245, 245);
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+.book {
+  width: 15rem;
+  height: 20rem;
+  margin: 1.2vw;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  box-shadow: 0 0 0.08rem 0.025rem rgb(84, 80, 80);
+  background-color: white;
+  border-radius: 6px;
+}
+
+.book-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.name,
+.author,
+.pages {
+  text-align: center;
+  font-size: 1.25rem;
+  box-shadow: inset;
+}
+
+.book-btns {
+  border: none;
+  background-color: white;
+}
+
+.read-btn {
+  border: none;
+  outline: none;
+}
+
+.read-btn,
+.remove-btn {
+  margin: 4px;
+  width: 13rem;
+  height: 3rem;
+}
+
+.model {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 15rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgb(163, 158, 158);
+  text-align: center;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in-out;
+}
+
+.model.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.add-book-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.add-book-form button {
+  width: 100%;
+}
+
+.error-msg {
+  display: none;
+  color: red;
+}
+
+.error-msg.active {
+  display: block;
+  margin-top: -15px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--border-radius);
+}
+
+.is-read {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  accent-color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay.active {
+  display: block;
+}
+
+.error-msg {
+  display: none;
+  color: red;
+}
+
+.error-msg.active {
+  display: block;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding-top: 6px;
+}/*# sourceMappingURL=style.css.map */
